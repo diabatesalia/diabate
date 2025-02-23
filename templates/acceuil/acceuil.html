@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+
+{% block contenu %}
+
+<br>
+<div class="row">
+	<div class="col-md-5">
+    <div class="card card-body">
+		<h5>Stock:</h5>
+		<!-- <div class="card card-body"></div> -->
+			<!-- <a class="btn btn-primary  btn-sm btn-block" href="">Créer Un Client</a> -->
+			<table class="table table-sm">
+				<tr>
+          <div class="col-md">
+            <div class="card card-body">
+              <h5>Stock Total</h5>
+              
+              <h1 style="text-align: center;padding: 10px"></h1>
+            </div>
+          </div>
+			</table>
+    
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>Les 5 Dernières Livraisons</h5>
+		<hr>
+		<div class="card card-body">
+			
+			<table class="table table-sm">
+				<tr>
+					<th>Client</th>
+					<th>Date De La Livraison</th>
+					<th>Quantité</th>
+          <th>Somme</th>
+					<th>Modifier</th>
+					<th>Supprimer</th>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}

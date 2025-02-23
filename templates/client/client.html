@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+
+{% block contenu %}
+
+<br>
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Client:</h5>
+			<hr>
+      <a class="btn btn-outline-info  btn-sm btn-block" href="">Creé Un Client</a>
+			<a class="btn btn-outline-info  btn-sm btn-block" href="">Modifier Le Client</a>
+			<a class="btn btn-outline-danger  btn-sm btn-block" href="">Supprimer Le Client</a>
+
+		</div>
+	</div>
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Informations Du Client</h5>
+			<hr>
+			<p>Nom: </p>
+      <p>Ville: </p>
+			<p>Telephone: </p>
+		</div>
+	</div>
+
+
+</div>
+
+
+<br>
+<div class="row">
+	<div class="col">
+		<div class="card card-body">
+			<form method="get">
+
+		    <button class="btn btn-primary" type="submit">Search</button>
+		  </form>
+		</div>
+	</div>
+
+</div>
+<br>
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<!-- <th>Produit</th> -->
+					<th>Nom Du Client</th>
+					<th>Ville Du Client</th>
+          <th>Telephone</th>
+					<th>Modifier</th>
+					<th>Supprimer</th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
